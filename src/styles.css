@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    background-color: #f1f1f1;
+}
+#conteainerHojaBlanca{
+    position: relative;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 20%);
+    max-width: 1140px !important;
+}
+#navegaciónTopConRedes{
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 20%);
+    max-width: 1140px !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#bannerPrincipal{ 
+    background-image: url("assets/fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}/*--------FIN TOP CON REDES----------*/
+
+#estrcturaBienvenida{
+    padding-top: 11%;
+    text-align: center;    
+  }
+  @media screen and (max-width: 575px) {
+    #estrcturaBienvenida {      
+        padding-top: 5%;
+        text-align: left; 
+    }
+}
+
+#presentación{
+    max-width: 1140px;
+}
+
+#imagenDeSergio{
+    max-width: 73%;
+    box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 25%);
+    margin-top: 15%;
+  }
+  @media screen and (max-width: 575px) {
+    #imagenDeSergio {      
+        max-width: 40%;
+        margin-top: 0%;
+        box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 30%);
+    }
+}
+
+#tituloSergioBarrios{
+    font-size:300%;
+    margin-bottom: 8%;
+  }
+  @media screen and (max-width: 575px) {
+    #tituloSergioBarrios {      
+        font-size:180%;
+        margin-bottom: 0%;
+        text-align: right !important;
+        padding-right: 8%;   
+    }
+}
+
+
+#parrafoHello{
+    font-size: 190%;
+    margin-bottom: 6%;
+  }
+  @media screen and (max-width: 575px){
+    #parrafoHello{
+        margin-top: 3%;
+        font-size: 110%;
+        margin-bottom: 3%;
+        padding: 0% 8% 0%;
+    }
+}
+
+
+
+#textoBienvenida{
+    color: white;
+    padding-left: 3%;
+    padding-right: 20%;
+    margin-bottom: 10%;
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+    text-align: start;
+  }
+  @media screen and (max-width: 575px) {
+    #textoBienvenida {      
+      color: rgb(0, 0, 0);
+      padding-left: 0%;
+      padding-right: 0%;
+      text-shadow:none;
+      text-align: center;
+      margin-bottom: 0%;
+    }
+}
+
+#letsWorckButton{
+    font-size: 140%;        
+  }
+  @media screen and (max-width: 575px){
+    #letsWorckButton{
+        font-size: 90%;       
+    }
+}
+
+.subtAzul{
+    font-weight: normal;
+    font-size: 190%;
+    color: #1D82BF;
+    }
+   @media screen and (max-width: 568px){
+        .subtAzul{
+            font-size: 150%;
+   }
+}
+
+#fontsparrafos{
+    font-size: 142%;    
+    }
+    @media screen and (max-width: 575px){
+        #fontsparrafos{
+            font-size: 110%;
+    }
+}
+
+
+#contDesdeHastaProjects{
+    padding: 0% 4% 0%;
+}
+
+#containerAboutMe{
+    border-bottom: solid #CCC 1px;
+    padding-bottom: 3%;
+    }
+   @media screen and (max-width: 768px) {
+    #containerAboutMe{
+        padding-bottom: 6%;
+    }    
+}
+
+#navegacionEnPaginaTitulos{
+    padding: 0% 7% 0%;
+    text-align: start;
+    }
+   @media screen and (max-width: 1199px) {
+    #navegacionEnPaginaTitulos{
+        padding: 4% 13% 0%;
+        /*text-align: center;*/
+    }
+}
+   @media screen and (max-width: 1024px) {
+    #navegacionEnPaginaTitulos{
+        padding: 4% 13% 0%;
+        text-align: start;
+    }
+}
+    @media screen and (max-width: 991px) {
+        #navegacionEnPaginaTitulos{
+        padding: 10% 9% 0%;
+        text-align: start;
+    }
+}
+    @media screen and (max-width: 767px) {
+        #navegacionEnPaginaTitulos{
+        padding: 10% 26% 0%;
+        text-align: start;
+    }
+}
+    @media screen and (max-width: 392px) {
+        #navegacionEnPaginaTitulos{
+        padding: 10% 23% 0%;
+        text-align: start;
+    }
+}
+
+
+
+
+
+
+
+
+
+#leyendaAboutMeCompleta{
+    padding: 5% 10% 0%;
+    border-right: solid #CCC 1px;    
+    }
+    @media screen and (max-width: 575px){
+        #leyendaAboutMeCompleta{
+            margin-top: 8%;
+            border-top: solid #CCC 1px;
+            padding: 5% 0% 0%;
+            border-right: none;
+            text-align: left;
+    }
+}
+
+#imgAP{
+    border-radius: 40px;
+}
+#lineaEntreLogoYleyenda{
+    border-left: 1px solid #CCC;
+    }
+   @media screen and (max-width: 575px){
+    #lineaEntreLogoYleyenda{
+        border-left: none;
+    }
+
+}
+
+#cuerpologin{
+    height: 70vh;
+    background-image: url("assets/fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

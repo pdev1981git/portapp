@@ -1,0 +1,120 @@
+<div class="container bg-white p-0" id="conteainerHojaBlanca"><!--CONTENEDOR DE TODO - HOJA BLANCA-->
+
+    <div class="row sticky-top"><!--CONTENEDOR redes el el top-->
+      <div class="col">
+        <nav id="navegaciónTopConRedes" class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid p-0">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand has-logo" target="_blank" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img class="rounded" src="../assets/ArgentinaProgramaLogo.png" height="25" alt="Logo Argentina Programa"></a>
+            <a target="_blank" href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"><img class="rounded" src="../assets/yoProgramo.jpg" height="15" alt="Logo de yo programo"></a>
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">                   
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Whatsapp"><i class="bi bi-linkedin"></i></a>
+                  </li>             
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Whatsapp"><i class="bi bi-whatsapp"></i></a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Gmail"><i class="bi bi-envelope"></i></a>
+                  </li>              
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio">Home <i class="bi bi-box-arrow-in-right"></i></a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </div>            
+    </div><!--fin CONTENEDOR redes el el top-->   
+
+    <div clas="" id="">
+        
+     <section id="cuerpologin">
+
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-md-4 col-1">
+              </div>
+              <div class="col-md-4 col-10">
+                
+
+
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)" >
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" formControlName="email" 
+                    [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+                    class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div *ngIf="Email?.errors && Email?.touched">
+                      <p *ngIf="Email?.hasError('required')" class="text-danger">
+                        El email es requerido.
+                      </p>
+                      <p *ngIf="Email?.hasError('email')" class="text-danger">
+                        El formato del email debe se valido.
+                      </p>
+                    </div>                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" formControlName="password" 
+                    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+                    class="form-control" id="exampleInputPassword1">
+                    <div *ngIf="Password?.errors && Password?.touched">
+                      <p *ngIf="Password?.hasError('required')" class="text-danger">
+                        La contraseña es requerida.
+                      </p>
+                      <p *ngIf="Password?.hasError('minlength')" class="text-danger">
+                        La contraseña dene tener al menos 8 caracteres.
+                      </p>
+                    </div>
+                  </div>                  
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
+
+
+
+                
+              </div>
+              <div class="col-md-4 col-1">                
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        
+
+     </section>   
+         
+    </div>
+    
+
+
+    
+    <div class="container-fluid my-0 p-0" id="containerDeFooter">
+      <footer class="text-center text-lg-start text-white" style="background-color: #3e4551">
+        <div class="container p-4 pb-0">
+          <section class="mb-4 text-center">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2022 Copyright: Sergio Barrios
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>    
+</div><!--fin CONTENEDOR DE TODO - HOJA BLANCA-->
